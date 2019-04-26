@@ -1,0 +1,14 @@
+###while true loop to run script every 180 seconds
+root@vmaksa69901csh # while true;
+> do
+> ./bashtest.bash 
+> sleep 180
+> done
+OK- User: d283255 is not logged in
+done
+
+#####while true to check disk usage
+while true;
+do
+du
+done;
