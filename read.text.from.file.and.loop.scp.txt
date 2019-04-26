@@ -1,0 +1,26 @@
+#:s/ /\r/g
+
+vi filenames.txt
+	boot.msg
+	boot.omsg
+	faillog
+	lastlog
+	localmessages
+	mail
+	mail.err
+	mail.info
+	mail.warn
+	messages
+	NetworkManager
+	ntp
+	warn
+
+cat filename.txt | while read i
+do 
+scp root@svaksa69901mrc:/var/log/$i .
+done
+
+for i in $(filename.txt)
+do
+scp root@svaksa69901mrc:/var/log/$i .
+done
